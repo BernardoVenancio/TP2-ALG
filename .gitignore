@@ -25,7 +25,3 @@ Thumbs.db
 *.exe
 *.log
 *.tmp
-
-# Dados gerados
-saida_resultados/
-*.csv

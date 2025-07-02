@@ -1,0 +1,5 @@
+arquivo,n_itens,W,valor_otimo,valor_algoritmo,n_nos,n_fila,tempo_seg,memoria_kb,memoria_pico_kb,status
+knapPI_14_200_1000_1.csv,200,997,5397,5397,37,19,0.007267,2.35,8.43,OK
+knapPI_1_500_1000_1.csv,500,2543,28857,28857,298,55,0.080584,1.94,21.34,OK
+knapPI_2_500_1000_1.csv,500,2543,4566,4566,341,50,0.048344,1.98,21.36,OK
+knapPI_3_500_1000_1.csv,500,2517,7117,7117,171978,635,15.330499,2.36,124.98,OK
