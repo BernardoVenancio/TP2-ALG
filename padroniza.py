@@ -1,8 +1,8 @@
 import os
 import csv
 
-instance_folder = "low-dimensional"
-saida_folder = "low-csv"
+instance_folder = "large_scale"
+saida_folder = "ls-cv"
 
 os.makedirs(saida_folder, exist_ok=True)
 
@@ -34,9 +34,9 @@ for fname in sorted(os.listdir(instance_folder)):
     print(f"Arquivo salvo: {csv_path}")
 
 # Pastas
-instance_folder = "low-dimensional"
-optimum_folder = "low-dimensional-optimum"
-saida_folder = "optimal"
+instance_folder = "large_scale"
+optimum_folder = "large_scale-optimum"
+saida_folder = "ls-optimal"
 
 os.makedirs(saida_folder, exist_ok=True)
 
