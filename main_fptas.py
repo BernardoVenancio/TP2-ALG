@@ -3,14 +3,14 @@ import os
 import csv
 import tracemalloc
 from utils import read_items_from_csv, read_optimal_metadata, get_file_pairs
-from fptas import knapsack_fptas  # ou knapsack_2approx_dp
+from fptas import knapsack_fptas
 
 TIMEOUT = 1800
 EPSILON = 0.5  # ajustável
 
 configuracoes = [
-    {"nome": "low", "input_path": "instancias/low/inputs", "opt_path": "instancias/low/labels", "saida_csv": "resultados/greedy/low.csv"},
-    {"nome": "large", "input_path": "instancias/large/inputs", "opt_path": "instancias/large/labels", "saida_csv": "resultados/greedy/large.csv"}
+    {"nome": "low", "input_path": "instancias/low/inputs", "opt_path": "instancias/low/labels", "saida_csv": "resultados/fptas/low.csv"},
+    {"nome": "large", "input_path": "instancias/large/inputs", "opt_path": "instancias/large/labels", "saida_csv": "resultados/fptas/large.csv"}
 ]
 
 for config in configuracoes:
