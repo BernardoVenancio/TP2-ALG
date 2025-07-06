@@ -3,7 +3,7 @@ import os
 import csv
 import tracemalloc
 from utils import read_items_from_csv, read_optimal_metadata, get_file_pairs
-from fptas import knapsack_fptas
+from greedy import knapsack_2approx
 
 TIMEOUT = 1800
 
@@ -51,7 +51,7 @@ for config in configuracoes:
             print(f"Rodando {fname} - n: {n}, W: {W}")
             tracemalloc.start()
             try:
-                result = knapsack_fptas(items, W, timeout_seconds=TIMEOUT)
+                result = knapsack_2approx(items, W, timeout_seconds=TIMEOUT)
                 current, peak = tracemalloc.get_traced_memory()
                 tracemalloc.stop()
 
