@@ -9,8 +9,8 @@ TIMEOUT = 1800
 EPSILON = 0.5  # ajustável
 
 configuracoes = [
-    {"nome": "low", "input_path": "instancias/low/inputs", "opt_path": "instancias/low/labels", "saida_csv": "resultados/fptas/low.csv"},
-    {"nome": "large", "input_path": "instancias/large/inputs", "opt_path": "instancias/large/labels", "saida_csv": "resultados/fptas/large.csv"}
+    {"nome": "low", "input_path": "instancias/low/inputs", "opt_path": "instancias/low/labels", "saida_csv": "resultados/fptas/low_dict.csv"},
+    {"nome": "large", "input_path": "instancias/large/inputs", "opt_path": "instancias/large/labels", "saida_csv": "resultados/fptas/large_dict.csv"}
 ]
 
 for config in configuracoes:
