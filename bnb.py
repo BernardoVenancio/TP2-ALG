@@ -18,7 +18,7 @@ class BnBResult:
     total_nodes: int
     max_queue_size: int
     duration: float
-    timeout_ocorreu: bool
+    timeout: bool
 
 def compute_bound(node, items, W, n):
     if node.weight >= W:
