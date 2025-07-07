@@ -176,3 +176,25 @@ plt.legend(title="Tipo de Bound", loc="upper left")
 
 
 plt.savefig("imagens/tempo_execucao_por_capacidade_500_itens.png")
+
+
+plt.figure(figsize=(10, 6))
+
+sns.scatterplot(
+    x="capacidade_mochila", 
+    y="memoria_pico_kb",
+    hue="tipo_bound", 
+    style="tipo_bound",  
+    data=dados_filtrados_500,
+    palette="Set1",  
+    s=100,  
+)
+
+plt.yscale('log')
+
+plt.title("Uso de Memória por Capacidade da Mochila (≤ 500 Itens)")
+plt.xlabel("Capacidade da Mochila")
+plt.ylabel("Uso de Memória (Escala Logarítmica)")
+plt.legend(title="Tipo de Bound", loc="upper left")
+
+plt.savefig("imagens/uso_memoria_por_capacidade_500_itens.png")
